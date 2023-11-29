@@ -85,11 +85,7 @@ ol {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
-/*Темплейт*/
-.cards-list-item-template {
-  display: flex;
-  flex-direction: column;
-}
+
 /*Результат*/
 .result {
   display: grid;
@@ -106,8 +102,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  max-width: 711px;
-  min-width: 386px;
+  width: 711px;
+  height: 386px;
 }
 /*форма-Поиска*/
 
@@ -201,11 +197,14 @@ ol {
   position: relative;
   height: 300px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: grid;
   grid-template-rows: auto;
   align-self: baseline;
   gap: 30px;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
 }
 
 .content__details {
@@ -237,7 +236,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 534px;
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -246,7 +245,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 534px;
+  max-width: 200px;
 }
 
 .content__card-link:focus {
@@ -262,14 +261,6 @@ ol {
 }
 
 .content__card-link:hover {
-  text-decoration: underline;
-}
-
-.content__video-card-description {
-  text-decoration: underline;
-}
-
-.content__video-card-title {
   text-decoration: underline;
 }
 
