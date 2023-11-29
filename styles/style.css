@@ -30,9 +30,9 @@ ol {
 .page {
   display: flex;
   align-items: center;
+  margin: auto;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
   font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
@@ -53,16 +53,14 @@ ol {
 }
 /*Кнопка-найти*/
 .button {
-  color: #fff;
-  text-align: center;
   font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  padding: 6px 0;
+  color: #fff;
+  background: none;
   border: 1px solid currentColor;
   cursor: pointer;
-  background: none;
 }
 
 .button:focus {
@@ -188,6 +186,7 @@ ol {
 
 .content {
   display: flex;
+  justify-content: center;
   align-items: end;
   gap: 30px;
   margin: auto;
@@ -197,14 +196,11 @@ ol {
   position: relative;
   height: 300px;
   overflow-y: auto;
+  scrollbar-width: none;
   display: grid;
   grid-template-rows: auto;
   align-self: baseline;
   gap: 30px;
-}
-
-.content__list::-webkit-scrollbar {
-  width: 0;
 }
 
 .content__details {
@@ -214,6 +210,7 @@ ol {
   grid-template-rows: 1fr min-content;
   justify-content: start;
   gap: 21px;
+  inline-size: 100%;
 }
 
 .content__accent {
